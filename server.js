@@ -87,7 +87,7 @@ app.get('/', (req, res) => {
   		//console.log(new Date(Date.now() - 3*60*60 * 1000))
 
   		// Send EJS file and results
- 		res.render(__dirname + '/views/index.ejs', {seaweed: results, other: {status: true, latitude1: latLong[0], longitude1: latLong[1]} })
+ 		res.render(__dirname + '/index.ejs', {seaweed: results, other: {status: true, latitude1: latLong[0], longitude1: latLong[1]} })
   		console.log("index.ejs and results sent")
 	})
 })
