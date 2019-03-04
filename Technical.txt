@@ -1,0 +1,29 @@
+//////REQUIREMENTS//////
+
+USER STORY: The user can see the status of the import, get a list of observations + use geolocation to determine current location.
+
+SOME TEST CASES: 
+
+	Page loads running Kingsbridge coordinates (should see 2 results in table).
+
+	Click Get My Location and then click allow to use geo location
+
+	Near New York 
+	40.277° latitude by -73.037° longitude.
+
+	Near Seattle/ Olympia
+	47.120° latitude by -122.932° longitude.
+
+	Honolulu, Hawaii
+	21.588° latitude by -158.036° longitude.
+
+
+//////CRITERIA//////
+
+On page load the web app attempts to load from latest observations: https://www.ndbc.noaa.gov/data/latest_obs/latest_obs.txt
+
+Only results within the last 3 hours are shown
+
+Station identifier, a variety of observations and the observation are displayed in UTC/GMT
+
+Table headings have human readable labels with unit abbreviations
